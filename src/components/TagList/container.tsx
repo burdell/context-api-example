@@ -1,15 +1,13 @@
 import React from "react";
 
-import "./styles.css";
-
 import { GifsConsumer } from "../../store/gifs";
-import GifList from "./component";
+import TagList from "./component";
 
 export default () => (
     <GifsConsumer>
-        {({ gifs, topTags, getGifs }) => (
+        {({ topTags, getGifs }) => (
             <div>
-                {gifs && <GifList gifs={gifs} />}
+                {topTags && <TagList tags={topTags} onClick={getGifs} />}
             </div>
         )}
     </GifsConsumer>
