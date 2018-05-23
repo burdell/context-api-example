@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default class GifSearch extends React.Component<Props, {}> {
-    public onChange = debounce((searchTerm: string) => this.props.onSearch(searchTerm), 500);
+    public onChange = debounce((searchTerm: string) => this.props.onSearch(searchTerm), 300);
 
     public render() {
         return (
