@@ -1,0 +1,25 @@
+.gif-list-container {
+    margin-top: 20px;
+}
+
+.moar {
+    margin: 20px 0;
+}
+
+.gif-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gif-list .gif {
+    margin: 0 20px;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid black;
+    margin: 0 2px;
+    padding: 2px;
+    cursor: pointer;
+}
