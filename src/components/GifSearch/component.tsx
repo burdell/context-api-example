@@ -1,10 +1,7 @@
 import { debounce } from "lodash";
 import * as React from "react";
 
-import "./styles.css";
-
 interface Props {
-    searchTerm: string;
     onSearch(searchTerm: string): void;
 }
 
